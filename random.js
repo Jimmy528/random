@@ -5,15 +5,29 @@ var namespace = "http://www.w3.org/2000/svg"
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createFirstScene() {
-    
+     makeRect(0,0,1000,1000,"lightblue",1)  
+     makeCircle(30,30,10,"yellow",1)
+    makeRect(0,50,200,50,"blue",1)
+    makeImage("http://www.clipartbest.com/cliparts/dc7/erL/dc7erLyMi.png",50,20,20,20,1)
+     makeImage("http://www.clipartbest.com/cliparts/dc7/erL/dc7erLyMi.png",100,10,10,10,1)
+     makeImage("http://www.clipartlord.com/wp-content/uploads/2014/10/shark10.png",50,50,40,40,1)
+     makeImage("http://images.clipartpanda.com/whale-clip-art-blue-grey-whale.svg",150,40,30,30,1)
+     makeImage("http://www.pd4pic.com/images/corals-underwater-algae-ecosystem-ocean-floor.png",0,45,200,100,1)
+              
 }
 
 
 // Fill in this function so that it draws something using SVG shapes!
-// You need to use at least 3 different types of shape.
+// You need to use at least 3different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createSecondScene() {
-    
+makeRect(0,0,1000,1000,"lightblue",1)
+makeCircle(30,30,15,"yellow",1)
+makeImage("https://img.clipartfest.com/4e292f105de8055f7dc6faf98135dfc6_airliner20clipart-plane-clipart-images_1014-406.svg",50,30,45,25,1)
+makeImage("http://www.clipartlord.com/wp-content/uploads/2016/02/flying-saucer12.png",100,60,30,30,1)
+makeImage("http://images.clipartpanda.com/cloudy-clipart-black-and-white-white-cloud.svg",30,40,20,20,1)
+makeImage("http://images.clipartpanda.com/cloudy-clipart-black-and-white-white-cloud.svg",120,40,20,20,1)
+
 }
 
 
@@ -21,7 +35,8 @@ function createSecondScene() {
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createThirdScene() {
-    
+ makeRect(0,0,1000,1000,"black",1)
+ makeCircle(50,50,30,"yellow",1)
 }
 
 
@@ -32,13 +47,17 @@ function createThirdScene() {
 // This function is called whenever you press the "Go!" button.
 function createRandomScene() {
     // Generate a random number between 0 and 1, and store it in a variable.
-    
+    varmyRandom = Math.random()
     // If the number is less than 0.33, call the function to create your first scene.
-    
-    
-    
+    if(varmyRandom < 0.33){
+        createFirstScene()
+    }else if(varmyRandom < 0.67){
+        createSecondScene()
+    }else{
+        createThirdScene()
+    }
     // Else, if the number is less than 0.67, call the function to create your second scene.
-    
+
     
     
     // Else, call the function to create your third scene.
