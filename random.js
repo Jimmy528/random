@@ -36,7 +36,15 @@ makeImage("http://images.clipartpanda.com/cloudy-clipart-black-and-white-white-c
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createThirdScene() {
  makeRect(0,0,1000,1000,"black",1)
- makeCircle(50,50,30,"yellow",1)
+ makeCircle(30,40,10,"darkgoldenrod",1)
+ makeCircle(100,120,80,"blue",1)
+ makeCircle(70,90,10,"green",1)
+ makeCircle(80,85,10,"green",1)
+ makeCircle(80,90,10,"green",1)
+ makeCircle(150,90,10,"green",1)
+ makeCircle(145,85,10,"green",1)
+ makeCircle(140,90,10,"green",1)
+ makeImage("https://img.clipartfox.com/ba07d6f033256bf88b52a5ecf8e3955b_flying-saucers-clip-art-ufo-clipart_500-345.jpeg",100,5,30,30,1)
 }
 
 
